@@ -73,7 +73,7 @@ function renderGameCards(cardStyleClass, games) {
         games.forEach(game => {
             const displayName = game.title;
             const gameId = game.id;
-            const gameImageUrl = game.image || `/images/${gameId}.png`;
+            const gameImageUrl = game.image || `/GamesAndStuff/images/${gameId}.png`;
             const gameLink = `/GamesAndStuff/game.html?game=${gameId}`;
 
             const card = document.createElement('a');

@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 
                 if (coverPlaceholder) {
                     const img = document.createElement('img');
-                    img.src = gameData.image || `/images/${gameId}.png`;
+                    img.src = gameData.image || `/GamesAndStuff/images/${gameId}.png`;
                     img.alt = `Cover image for ${displayTitle}`;
                     img.className = 'max-w-full max-h-full object-contain object-cover';
                     img.onload = function() {
