@@ -139,6 +139,6 @@ document.getElementById('addGameForm').addEventListener('submit', async e => {
         await saveUserGame(newGame);
 
         alert('Game added successfully!');
-        window.location.href = '/games.html';
+        window.location.href = '/GamesAndStuff/games.html';
     }
 });

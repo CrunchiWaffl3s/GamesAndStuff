@@ -52,7 +52,7 @@ function renderGameCards(cardStyleClass, games) {
     container.innerHTML = '';
 
     const addGameCardHtml = `
-        <a href="add.html" class="rounded-3xl p-5 transform hover:scale-[1.04] transition duration-300 ease-in-out cursor-pointer group w-60 h-60 mx-auto border-2 relative flex flex-col justify-center items-center">
+        <a href="/GamesAndStuff/add.html" class="rounded-3xl p-5 transform hover:scale-[1.04] transition duration-300 ease-in-out cursor-pointer group w-60 h-60 mx-auto border-2 relative flex flex-col justify-center items-center">
             <div class="w-32 h-32 overflow-hidden rounded-2xl bg-transparent flex justify-center">
                 <div data-lucide="plus" class="icon-plus w-full h-full justify-center"></div>
             </div>
@@ -74,7 +74,7 @@ function renderGameCards(cardStyleClass, games) {
             const displayName = game.title;
             const gameId = game.id;
             const gameImageUrl = game.image || `/images/${gameId}.png`;
-            const gameLink = `/game.html?game=${gameId}`;
+            const gameLink = `/GamesAndStuff/game.html?game=${gameId}`;
 
             const card = document.createElement('a');
             card.href = gameLink;
