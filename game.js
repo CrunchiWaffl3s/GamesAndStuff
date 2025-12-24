@@ -30,7 +30,7 @@ async function getUserGames() {
 
 async function loadGameData() {
     try {
-        const response = await fetch('/games.json');
+        const response = await fetch('/GamesAndStuff/games.json');
         let defaultGames = await response.json();
         const userGames = await getUserGames();
         return [...defaultGames, ...userGames];

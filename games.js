@@ -168,7 +168,7 @@ function applySearchFilter(cardStyleClass) {
 async function loadGames(cardStyleClass) {
     const container = document.getElementById('game-grid');
     try {
-        const response = await fetch('/games.json');
+        const response = await fetch('/GamesAndStuff/games.json');
         let defaultGames = await response.json();
         defaultGames = defaultGames.filter(g => g.id && g.title);
         
