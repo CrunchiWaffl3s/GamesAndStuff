@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gradient-to-br from-[#ff0000] to-[#0000ff] bg-fixed">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Games & Stuff</title>
+        <link rel="icon" href="/logo.png" type="image/x-icon"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>tailwind.config = {theme: {extend: {fontFamily: {sans: ['Montserrat', 'sans-serif'], },}},}</script>
+    </head>
+    <body class="m-0 font-sans overflow-y-auto min-h-screen">
+        <aside id="sidebar-menu" class="fixed top-0 left-0 h-full w-64 p-6 z-20 transform -translate-x-full transition duration-300 ease-in-out flex flex-col">
+            <nav class="flex flex-col flex-grow justify-around py-10">
+                <a href="/games.html" class="block text-4xl font-semibold transition duration-150 transform hover:translate-x-4 flex"><div data-lucide="gamepad-2" class="w-10 h-10 mr-4 ml-2"></div>Games</a>
+                <a href="/themes.html" class="block text-4xl font-semibold transition duration-15 transform hover:translate-x-4 flex"><div data-lucide="palette" class="w-10 h-10 mr-4 ml-2"></div>Themes</a>
+                <a href="/credits.html" class="block text-4xl font-semibold transition duration-150 transform hover:translate-x-4 flex"><div data-lucide="scroll-text" class="w-10 h-10 mr-4 ml-2"></div>Credits</a>
+            </nav>
+        </aside>
+        <div id="sidebar-overlay" class="fixed inset-0 bg-black/50 opacity-0 pointer-events-none z-10 backdrop-blur-xl transition-opacity duration-300 ease-in-out"></div>
+        <nav class="fixed top-2 left-2 right-2 p-3 sm:top-5 sm:left-5 sm:right-5 sm:p-5 rounded-[40px] flex items-center justify-between z-10 space-x-2 sm:space-x-6">
+            <button id="menu-button" class="p-3 rounded-full flex-shrink-0 border-solid border-2">
+                <div data-lucide="menu" class="w-12 h-12"></div>
+            </button>
+            <div class="p-3 rounded-full flex items-center space-x-4 border-solid border-2 backdrop-blur-xl">
+                <div id="fps-status" class="px-4 py-2 rounded-full text-sm font-bold border-solid border-2"></div>
+                <div id="time-status" class="px-4 py-2 rounded-full text-sm font-bold border-solid border-2"></div>
+                <div id="battery-status" class="px-4 py-2 rounded-full text-sm font-bold border-solid border-2"></div>
+            </div>
+            <a class="p-3 rounded-full flex-shrink-0 border-solid border-2" href="/index.html" title="Home">
+                <img src="/logo.png" class="w-12 h-12 object-contain rounded-full">
+            </a>
+        </nav>
+            <div class="title-container flex flex-col justify-center items-center w-full pt-80 mb-20">
+                <p class="title text-center text-4xl md:text-7xl font-extrabold tracking-tight">Games & Stuff</p>
+                <p class="text-center text-xl md:text-3xl mt-4 cursor-pointer font-medium italic focus:outline-none select-none">A game website frontend by CrunchiWaffl3s</p>
+            </div>
+        <main class="max-w-4xl mx-auto px-6 pb-24 space-y-10">
+            <section class="border-2 rounded-3xl p-6">
+                <div class="font-bold text-2xl">A Dark Room • Doublespeak Games</div>
+                <div>Source: <a href="https://github.com/doublespeakgames/adarkroom" class="underline" target="_blank" rel="noopener">https://github.com/doublespeakgames/adarkroom</a></div>
+                <div>License: <a href="https://www.mozilla.org/en-US/MPL/2.0/" class="underline" target="_blank" rel="noopener">Mozilla Public License v2.0</a></div>
+            </section>
+            <section class="border-2 rounded-3xl p-6">
+                <div class="font-bold text-2xl">n-gon • Landgreen</div>
+                <div>Source: <a href="https://github.com/landgreen/n-gon" class="underline" target="_blank" rel="noopener">https://github.com/landgreen/n-gon</a></div>
+                <div>License: <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" class="underline" target="_blank" rel="noopener">GNU General Public License v3.0</a></div>
+            </section>
+            <section class="border-2 rounded-3xl p-6">
+                <div class="font-bold text-2xl">2048 • Gabriele Cirulli</div>
+                <div>Source: <a href="https://github.com/gabrielecirulli/2048" class="underline" target="_blank" rel="noopener">https://github.com/gabrielecirulli/2048</a></div>
+                <div>License: <a href="https://opensource.org/licenses/MIT" class="underline" target="_blank" rel="noopener">MIT License</a></div>
+            </section>
+            <section class="border-2 rounded-3xl p-6">
+                <div class="font-bold text-2xl">Sandboxels • R74n</div>
+                <div>Source: <a href="https://github.com/R74nCom/sandboxels" class="underline" target="_blank" rel="noopener">https://github.com/R74nCom/sandboxels</a></div>
+                <div>License: <a href="https://github.com/R74nCom/sandboxels/blob/main/license.txt" class="underline" target="_blank" rel="noopener">R74n Content License</a></div>
+            </section>
+            <section class="border-2 rounded-3xl p-6">
+                <div class="font-bold text-2xl">Particle Clicker • Tadej Novak</div>
+                <div>Source: <a href="https://github.com/particle-clicker/particle-clicker" class="underline" target="_blank" rel="noopener">https://github.com/particle-clicker/particle-clicker</a></div>
+                <div>License: <a href="https://opensource.org/licenses/MIT" class="underline" target="_blank" rel="noopener">MIT License</a></div>
+            </section>
+            <section class="border-2 rounded-3xl p-6">
+                <div class="font-bold text-2xl">Hextris • Logan Engstrom</div>
+                <div>Source: <a href="https://github.com/Hextris/hextris" class="underline" target="_blank" rel="noopener">https://github.com/Hextris/hextris</a></div>
+                <div>License: <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" class="underline" target="_blank" rel="noopener">GNU General Public License v3.0</a></div>
+            </section>
+            <section class="border-2 rounded-3xl p-6">
+                <div class="font-bold text-2xl">HexGL • Thibaut Despoulain</div>
+                <div>Source: <a href="https://github.com/BKcore/HexGL" class="underline" target="_blank" rel="noopener">https://github.com/BKcore/HexGL</a></div>
+                <div>License: <a href="https://opensource.org/licenses/MIT" class="underline" target="_blank" rel="noopener">MIT License</a></div>
+            </section>
+            <section class="border-2 rounded-3xl p-6">
+                <div class="font-bold text-2xl">Thanks to Lucide for the icons</div>
+                <div>Source: <a href="https://lucide.dev/icons" class="underline" target="_blank" rel="noopener">https://lucide.dev/icons</a></div>
+                <div>License: <a href="https://opensource.org/license/isc-license-txt" class="underline" target="_blank" rel="noopener">ISC License</a></div>
+            </section>
+        </main>
+        <script src="themes.js"></script>
+        <script src="index.js"></script>
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script>lucide.createIcons();</script>
+        <footer class="w-full px-4 py-4">
+            <p class="text-center text-base md:text-lg break-words">
+                Games & Stuff is created and maintained by CrunchiWaffl3s. © 2025 CrunchiWaffl3s. All rights reserved. 
+                <a href="https://github.com/CrunchiWaffl3s/GamesAndStuff" class="underline">Source code</a> is licensed under the
+                <a href="https://github.com/CrunchiWaffl3s/GamesAndStuff/blob/master/LICENSE" class="underline">
+                BSD 3-Clause License
+                </a>.
+            </p>
+        </footer>
+    </body>
+</html>

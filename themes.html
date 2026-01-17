@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gradient-to-br from-[#ff0000] to-[#0000ff] bg-fixed">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Games & Stuff</title>
+        <link rel="icon" href="/logo.png" type="image/x-icon"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>tailwind.config = {theme: {extend: {fontFamily: {sans: ['Montserrat', 'sans-serif'], },}},}</script>
+    </head>
+    <body class="m-0 min-h-screen flex w-full items-center justify-center">
+        <aside id="sidebar-menu" class="fixed top-0 left-0 h-full w-64 p-6 z-20 transform -translate-x-full transition duration-300 ease-in-out flex flex-col">
+            <nav class="flex flex-col flex-grow justify-around py-10">
+                <a href="/games.html" class="block text-4xl font-semibold transition duration-150 transform hover:translate-x-4 flex"><div data-lucide="gamepad-2" class="w-10 h-10 mr-4 ml-2"></div>Games</a>
+                <a href="/themes.html" class="block text-4xl font-semibold transition duration-15 transform hover:translate-x-4 flex"><div data-lucide="palette" class="w-10 h-10 mr-4 ml-2"></div>Themes</a>
+                <a href="/credits.html" class="block text-4xl font-semibold transition duration-150 transform hover:translate-x-4 flex"><div data-lucide="scroll-text" class="w-10 h-10 mr-4 ml-2"></div>Credits</a>
+            </nav>
+        </aside>
+        <div id="sidebar-overlay" class="fixed inset-0 bg-black/50 opacity-0 pointer-events-none z-10 backdrop-blur-xl transition-opacity duration-300 ease-in-out"></div>
+        <nav class="fixed top-2 left-2 right-2 p-3 sm:top-5 sm:left-5 sm:right-5 sm:p-5 rounded-[40px] flex items-center justify-between z-10 space-x-2 sm:space-x-6">
+            <button id="menu-button" class="p-3 rounded-full flex-shrink-0 border-solid border-2">
+                <div data-lucide="menu" class="w-12 h-12"></div>
+            </button>
+            <div class="p-3 rounded-full flex items-center space-x-4 border-solid border-2 backdrop-blur-xl">
+                <div id="fps-status" class="px-4 py-2 rounded-full text-sm font-bold border-solid border-2"></div>
+                <div id="time-status" class="px-4 py-2 rounded-full text-sm font-bold border-solid border-2"></div>
+                <div id="battery-status" class="px-4 py-2 rounded-full text-sm font-bold border-solid border-2"></div>
+            </div>
+            <a class="p-3 rounded-full flex-shrink-0 border-solid border-2" href="/index.html" title="Home">
+                <img src="/logo.png" class="w-12 h-12 object-contain rounded-full">
+            </a>
+        </nav>
+        <div class="flex flex-col items-center justify-center p-4">
+            <h1 class="text-7xl font-extrabold mb-10 pt-40 text-center">Themes</h1>
+            <div id="theme-buttons" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full"></div>
+        </div>
+        <script src="themes.js"></script>
+        <script src="index.js"></script>
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script>lucide.createIcons();</script>
+    </body>
+</html>
