@@ -77,7 +77,7 @@ document.querySelectorAll('.method-btn').forEach(btn => {
         if (selectedMethod === 'repo') {
             dynamicInput.innerHTML = `
                 <label class="block mb-2 font-bold text-lg">GitHub File URL *</label>
-                <input type="text" id="repoLink" placeholder="https://github.com/user/repo/blob/master/game.html"
+                <input type="text" id="repoLink" placeholder="https://github.com/user/repo/index.html"
                     class="w-full px-4 py-3 rounded-full bg-transparent border-2 focus:outline-none">
             `;
         } else if (selectedMethod === 'embed') {
