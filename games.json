@@ -1,0 +1,32 @@
+[
+  {
+    "id": "2048",
+    "name": "2048",
+    "link": "https://raw.githack.com/gabrielecirulli/2048/master/index.html"
+  },
+  {
+    "id": "n-gon",
+    "name": "n-gon",
+    "link": "https://raw.githack.com/landgreen/n-gon/master/index.html"
+  },
+  {
+    "id": "a-dark-room",
+    "name": "A Dark Room",
+    "link": "https://raw.githack.com/doublespeakgames/adarkroom/main/index.html"
+  },
+  {
+    "id": "hexgl",
+    "name": "HexGL",
+    "link": "https://raw.githack.com/BKcore/HexGL/master/index.html"
+  },
+  {
+    "id": "particle-clicker",
+    "name": "Particle Clicker",
+    "link": "https://raw.githack.com/particle-clicker/particle-clicker/master/index.html"
+  },
+  {
+    "id": "hextris",
+    "name": "Hextris",
+    "link": "https://raw.githack.com/Hextris/hextris/gh-pages/index.html"
+  }
+]

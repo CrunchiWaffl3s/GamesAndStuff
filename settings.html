@@ -12,12 +12,22 @@
       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <main class="flex flex-col items-center">
-      <h1 class="font-semibold text-white text-7xl m-4 self-center">Games & Stuff</h1>
-      <h3 id="randomtext" class="font-[550] italic text-white text-3xl self-center"></h3>
-      <h3 class="text-xl fixed right-4 bottom-4">v3.0.0, Made by 
-        <a href="https://github.com/CrunchiWaffl3s" class="underline">CrunchiWaffl3s</a>
-      </h3>
+    <main class="flex min-h-screen items-center justify-center px-4">
+      <div class="w-full max-w-md rounded-3xl bg-white/10 p-6 shadow-2xl backdrop-blur-xl">
+        <h2 class="text-3xl font-semibold">Themes</h2>
+        <div class="mt-2 grid grid-cols-3 gap-2">
+          <button onclick="setTheme('normal')" class="theme-buttons">Normal</button>
+          <button onclick="setTheme('dark')" class="theme-buttons">Dark</button>
+          <button onclick="setTheme('light')" class="theme-buttons">Light</button>
+          <button onclick="setTheme('oled')" class="theme-buttons">OLED</button>
+          <button onclick="setTheme('pink')" class="theme-buttons">Pink</button>
+          <button onclick="setTheme('green')" class="theme-buttons">Green</button>
+        </div>
+        <h3 class="mt-4 font-semibold">Custom background:</h3>
+        <input class="outline-none" type="text" id="bgHex" placeholder="(e.g. #000000)">
+        <h3 class="mt-2 font-semibold">Custom text color:</h3>
+        <input class="outline-none" type="text" id="textHex" placeholder="(e.g. #000000)">
+      </div>
     </main>
     <button id="btn" class="material-symbols-rounded absolute top-4 left-4 z-50 cursor-pointer" style="font-size: 4rem;">menu</button>
     <div id="panel" class="h-screen w-screen z-20 flex items-center">
@@ -38,5 +48,5 @@
     </div>
   </body>
   <script src="main.js"></script>
-  <script src="random.js"></script>
+  <script src="theme.js"></script>
 </html>
