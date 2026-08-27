@@ -4,6 +4,14 @@
   navigation: auto;
 }
 
+:fullscreen {
+  border-radius: 0 !important;
+}
+
+:-webkit-full-screen {
+  border-radius: 0 !important;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -47,15 +55,32 @@ a, h1, h2, h3, h4, h5, h6, button {
   font-weight: 500;
 }
 
+#game-cards img {
+  max-width: 9rem;
+  max-height: 9rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  object-fit: contain;
+  transform: translateZ(30px);
+}
+
+#game-cards p {
+  transform: translateZ(30px)
+}
+
 #game-cards a {
   background-color: rgba(255, 255, 255, 0.1);
-  padding: 2rem;
-  border-radius: 0.75rem;
-  transition: transform 0.2s ease-in-out;
+  padding: 1.3rem;
+  border-radius: 1.5rem;
+  transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  text-align: center;
+  transform-style: preserve-3d;
+  transform: perspective(62.5rem);
 }
 
 #game-cards a:hover {
   transform: scale(1.1);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28), 0 4px 10px rgba(0, 0, 0, 0.18);
 }
 
 iframe {

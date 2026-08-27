@@ -7,7 +7,14 @@ fetch('./games.json')
     
     const frame = document.createElement("iframe");
     frame.src = game.link;
-    frame.title = game.name;
-
     document.body.appendChild(frame);
+
+    const info_title = document.getElementById('info-title');
+    info_title.textContent = game.name
+
+    document.getElementById('fs-btn').addEventListener('click', function(e) {
+      if (!document.fullscreenElement) {
+        frame.requestFullscreen()
+      }
+    });
 });

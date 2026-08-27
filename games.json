@@ -28,5 +28,25 @@
     "id": "hextris",
     "name": "Hextris",
     "link": "https://raw.githack.com/Hextris/hextris/gh-pages/index.html"
+  },
+  {
+    "id": "just-one-boss",
+    "name": "Just One Boss",
+    "link": "https://raw.githack.com/aylanonsense/just-one-boss/master/web/index.html"
+  },
+  {
+    "id": "poom",
+    "name": "Poom",
+    "link": "https://raw.githack.com/freds72/poom-html/master/index.html"
+  },
+  {
+    "id": "antimatter-dimensions",
+    "name": "Antimatter Dimensions",
+    "link": "https://raw.githack.com/IvarK/AntimatterDimensions/master/index.html"
+  },
+  {
+    "id": "space-company",
+    "name": "Space Company",
+    "link": "https://raw.githack.com/sparticle999/SpaceCompany/gh-pages/index.html"
   }
 ]

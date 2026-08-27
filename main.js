@@ -1,6 +1,14 @@
 const root = document.documentElement;
 
 // Navbar stuff
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar").innerHTML = data;
+    })
+});
+
 const btn = document.getElementById("btn");
 const panel = document.getElementById("panel");
 

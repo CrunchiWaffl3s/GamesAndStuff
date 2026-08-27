@@ -13,8 +13,17 @@
   </head>
   <body>
     <main>
+      <div id="info-panel" class="text-center fixed left-0 top-1/2 -translate-y-1/2 w-[30vw] h-[90vh] bg-white/10 ml-12 rounded-2xl">
+        <h1 id="info-title" class="font-semibold text-5xl m-10"></h1>
+      </div>
+      <div id="toolbar" class="fixed bottom-0 right-0 w-[60vw] h-[10vh] bg-white/10 rounded-2xl m-8 flex items-center justify-center gap-10">
+        <a id="fs-btn" class="cursor-pointer material-symbols-rounded" style="font-size: 2rem;">fullscreen</a>
+        <a class="material-symbols-rounded" style="font-size: 2rem;">open_in_new</a>
+        <a class="material-symbols-rounded" style="font-size: 2rem;">refresh</a>
+        <a class="material-symbols-rounded" style="font-size: 2rem;">home</a>
+      </div>
     </main>
-    <button id="btn" class="material-symbols-rounded absolute top-4 left-4 z-50" style="font-size: 4rem;">menu</button>
+    <button id="btn" class="cursor-pointer material-symbols-rounded absolute top-4 left-4 z-50" style="font-size: 4rem;">menu</button>
     <div id="panel" class="h-screen w-screen z-20 flex items-center">
       <ul class="text-5xl font-[550] space-y-18 m-10">
         <a href="/" class="flex align-center gap-2 transition-transform duration-300 hover:translate-x-4">
