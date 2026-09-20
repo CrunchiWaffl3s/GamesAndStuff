@@ -12,24 +12,12 @@
       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <main class="w-screen h-screen p-6 box-border grid grid-cols-[30vw_1fr] grid-rows-[1fr_9vh] gap-6 overflow-hidden">
-      <div id="info-panel" class="row-span-2 text-center flex flex-col justify-center items-center bg-white/10 rounded-2xl h-full">
-        <h1 id="info-title" class="font-semibold text-5xl m-10"></h1>
-        <span id="battery" class="flex align-center"></span>
-        <span id="time" class="flex align-center mt-2"></span>
-      </div>
-      <div class="w-full h-full rounded-2xl overflow-hidden">
-        <iframe id="frame" class="w-full h-full border-none block"></iframe>
-      </div>
-      <div id="toolbar" class="bg-white/10 rounded-2xl h-full flex items-center justify-center gap-10">
-        <a id="fs-btn" class="material-symbols-rounded" title="Fullscreen">fullscreen</a>
-        <a id="newtab-btn" class="material-symbols-rounded" title="Open in about:blank">open_in_new</a>
-        <a id="reload-btn" class="material-symbols-rounded" title="Refresh Game">refresh</a>
-        <a id="home-btn" class="material-symbols-rounded" title="Home">home</a>
-      </div>
+    <main class="flex flex-col items-center">
+      <h1 class="font-semibold text-white text-7xl m-4">Games & Stuff</h1>
+      <h3 class="font-[550] text-white text-3xl">A game website frontend by CrunchiWaffl3s</h3>
     </main>
-    <button id="btn" class="cursor-pointer material-symbols-rounded absolute top-4 left-4 z-50" style="font-size: 4rem;">menu</button>
-    <div id="panel" class="h-screen w-screen z-20 flex items-center">
+    <button id="btn" class="fixed cursor-pointer material-symbols-rounded absolute top-4 left-4 z-50 cursor-pointer" style="font-size: 4rem;">menu</button>
+    <div id="panel" class="fixed inset-0 flex items-center h-screen w-screen z-20">
       <ul class="text-5xl font-[550] space-y-18 m-10">
         <a href="/" class="flex align-center gap-2 transition-transform duration-300 hover:translate-x-4">
           <span class="material-symbols-rounded" style="font-size: 3rem;">home</span>
@@ -47,5 +35,4 @@
     </div>
   </body>
   <script src="main.js"></script>
-  <script src="games.js"></script>
 </html>

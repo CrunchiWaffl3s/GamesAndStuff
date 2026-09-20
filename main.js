@@ -1,18 +1,10 @@
 const root = document.documentElement;
 
 // Navbar stuff
-document.addEventListener("DOMContentLoaded", () => {
-  fetch("navbar.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("navbar").innerHTML = data;
-    })
-});
-
 const btn = document.getElementById("btn");
 const panel = document.getElementById("panel");
 
-btn.addEventListener("click", () => {
+btn.addEventListener("click", (event) => {
   panel.classList.toggle("show");
 });
 
@@ -24,7 +16,7 @@ panel.addEventListener("click", () => {
 let theme = localStorage.getItem("theme") || "normal";
 root.setAttribute('data-theme', theme);
 
-window.setTheme = function (themeName) {
+window.setTheme = function(themeName) {
   root.style.removeProperty("--bg");
   root.style.removeProperty("--text");
 

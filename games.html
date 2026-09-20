@@ -13,10 +13,10 @@
   </head>
   <body>
     <main>
-     <div id="game-cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6 font-medium text-lg"></div>
+     <div id="game-cards" class="p-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6 font-medium text-lg"></div>
     </main>
-    <button id="btn" class="cursor-pointer material-symbols-rounded absolute top-4 left-4 z-50" style="font-size: 4rem;">menu</button>
-    <div id="panel" class="h-screen w-screen z-20 flex items-center">
+    <button id="btn" class="fixed cursor-pointer material-symbols-rounded absolute top-4 left-4 z-50 cursor-pointer" style="font-size: 4rem;">menu</button>
+    <div id="panel" class="fixed inset-0 flex items-center h-screen w-screen z-20">
       <ul class="text-5xl font-[550] space-y-18 m-10">
         <a href="/" class="flex align-center gap-2 transition-transform duration-300 hover:translate-x-4">
           <span class="material-symbols-rounded" style="font-size: 3rem;">home</span>
@@ -34,6 +34,6 @@
     </div>
   </body>
   <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
   <script src="gamesPage.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1"></script>
 </html>
