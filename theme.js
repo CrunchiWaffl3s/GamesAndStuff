@@ -1,4 +1,3 @@
-const root = document.documentElement;
 const theme_panel = document.querySelector(".theme-panel");
 const bgInput = document.getElementById("bgHex");
 const textInput = document.getElementById("textHex");
