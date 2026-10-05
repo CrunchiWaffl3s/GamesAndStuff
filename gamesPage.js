@@ -121,4 +121,4 @@ searchInput.addEventListener('input', () => {
     const name = card.querySelector('p').textContent.toLowerCase();
     card.style.display = name.includes(search) ? '' : 'none';
   });
-});
+}); 
