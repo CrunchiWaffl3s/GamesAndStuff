@@ -12,26 +12,98 @@
       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <main class="flex flex-col items-center">
-      <h1 class="font-semibold text-white text-7xl m-4">Games & Stuff</h1>
-      <h3 class="font-[550] text-white text-3xl">A game website frontend by CrunchiWaffl3s</h3>
+    <main class="flex flex-col items-center min-h-screen p-6"> 
+      <h1 class="font-semibold text-white text-7xl m-4 mt-10 text-center">Games & Stuff</h1> 
+      <h3 class="font-[550] text-white text-3xl mb-12 text-center">A game website frontend by CrunchiWaffl3s</h3> 
+      <div class="grid grid-cols-1 gap-8 w-full max-w-7xl px-4">
+        <div class="bg-white/10 rounded-3xl p-6 hover:shadow-2xl transition-shadow duration-200 ease-in-out">
+          <h2 class="text-2xl font-semibold mb-4 pb-2">Resources</h2>
+          <ul class="space-y-4">
+            <li>
+              <p class="font-semibold">Tailwind</p>
+              <p class="text-xs text-[var(--text)] opacity-50">MIT • Adam Wathan</p>
+            </li>
+            <li>
+              <p class="font-semibold">Vanilla-tilt.js</p>
+              <p class="text-xs text-[var(--text)] opacity-50">MIT • micku7zu</p>
+            </li>
+            <li>
+              <p class="font-semibold">Selecto</p>
+              <p class="text-xs text-[var(--text)] opacity-50">MIT • Daybrush</p>
+            </li>
+            <li>
+              <p class="font-semibold">Material Icons Rounded</p>
+              <p class="text-xs text-[var(--text)] opacity-50">Apache 2.0 • Google</p>
+            </li>
+            <li>
+              <p class="font-semibold">Google Sans Flex</p>
+              <p class="text-xs text-[var(--text)] opacity-50">OFL • Google</p>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-white/10 rounded-3xl p-6 hover:shadow-2xl transition-shadow duration-200 ease-in-out">
+          <h2 class="text-2xl font-semibold text-white mb-4 pb-2">Games</h2>
+          <ul class="space-y-4">
+            <li>
+              <p class="font-semibold">A Dark Room</p>
+              <p class="text-xs text-[var(--text)] opacity-50">MPL 2.0 • Doublespeak Games</p>
+            </li>
+            <li>
+              <p class="font-semibold">n-gon</p>
+              <p class="text-xs text-[var(--text)] opacity-50">GPLv3 • Landgreen</p>
+            </li>
+            <li>
+              <p class="font-semibold">2048</p>
+              <p class="text-xs text-[var(--text)] opacity-50">MIT • Gabriele Cirulli</p>
+            </li>
+            <li>
+              <p class="font-semibold">Particle Clicker</p>
+              <p class="text-xs text-[var(--text)] opacity-50">MIT • Tadej Novak</p>
+            </li>
+            <li>
+              <p class="font-semibold">Hextris</p>
+              <p class="text-xs text-[var(--text)] opacity-50">GPLv3 • Logan Engstrom</p>
+            </li>
+            <li>
+              <p class="font-semibold">HexGL</p>
+              <p class="text-xs text-[var(--text)] opacity-50">MIT • Thibaut Despoulain</p>
+            </li>
+            <li>
+              <p class="font-semibold">Antimatter Dimensions</p>
+              <p class="text-xs text-[var(--text)] opacity-50">MIT • IvarK</p>
+            </li>
+            <li>
+              <p class="font-semibold">Space Company</p>
+              <p class="text-xs text-[var(--text)] opacity-50">MIT • sparticle999</p>
+            </li>
+            <li>
+              <p class="font-semibold">Just One Boss</p>
+              <p class="text-xs text-[var(--text)] opacity-50">CC BY-NC-SA 4.0 • aylanonsense</p>
+            </li>
+            <li>
+              <p class="font-semibold">Poom</p>
+              <p class="text-xs text-[var(--text)] opacity-50">MIT • freds72</p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </main>
     <button id="btn" class="fixed cursor-pointer material-symbols-rounded absolute top-4 left-4 z-50 cursor-pointer" style="font-size: 4rem;">menu</button>
-    <div id="panel" class="fixed inset-0 flex items-center h-screen w-screen z-20">
-      <ul class="text-5xl font-[550] space-y-18 m-10">
-        <a href="/" class="flex align-center gap-2 transition-transform duration-300 hover:translate-x-4">
-          <span class="material-symbols-rounded" style="font-size: 3rem;">home</span>
-        Home</a>
-        <a href="/games.html" class="flex align-center gap-2 transition-transform duration-300 hover:translate-x-4">
-          <span class="material-symbols-rounded" style="font-size: 3rem;">stadia_controller</span>
-        Games</a>
-        <a href="/settings.html" class="flex align-center gap-2 transition-transform duration-300 hover:translate-x-4">
-          <span class="material-symbols-rounded" style="font-size: 3rem;">settings</span>
-        Settings</a>
-        <a href="/credits.html" class="flex align-center gap-2 transition-transform duration-300 hover:translate-x-4">
-          <span class="material-symbols-rounded" style="font-size: 3rem;">patient_list</span>
-        Credits</a>
-      </ul>
+    <div id="panel" class="fixed inset-0 flex items-center h-screen w-screen z-20"> 
+      <ul class="text-[3.5vw] font-[550] space-y-[4vh] mt-[5vh] ml-[3vw] bg-zinc-300/20 p-[3vw] pr-[5vw] rounded-[3vw] backdrop-blur-3xl"> 
+        <a href="/" class="flex items-center gap-[1vw] transition-transform duration-300 hover:translate-x-[0.5vw] text-shadow-lg"> 
+          <span class="material-symbols-rounded" style="font-size: 3.5vw;">home</span> Home
+        </a> 
+        <a href="/games.html" class="flex items-center gap-[1vw] transition-transform duration-300 hover:translate-x-[0.5vw] text-shadow-lg"> 
+          <span class="material-symbols-rounded" style="font-size: 3.5vw;">stadia_controller</span> Games
+        </a> 
+        <a href="/settings.html" class="flex items-center gap-[1vw] transition-transform duration-300 hover:translate-x-[0.5vw] text-shadow-lg"> 
+          <span class="material-symbols-rounded" style="font-size: 3.5vw;">settings</span> Settings
+        </a> 
+        <a href="/credits.html" class="flex items-center gap-[1vw] transition-transform duration-300 hover:translate-x-[0.5vw] text-shadow-lg"> 
+          <span class="material-symbols-rounded" style="font-size: 3.5vw;">patient_list</span> Credits
+        </a> 
+      </ul> 
     </div>
   </body>
   <script src="main.js"></script>

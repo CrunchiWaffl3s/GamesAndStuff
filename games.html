@@ -13,27 +13,41 @@
   </head>
   <body>
     <main>
-     <div id="game-cards" class="p-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6 font-medium text-lg"></div>
+      <div class="flex justify-center items-center w-full gap-3 mt-7">
+        <input id="game-search" type="text" placeholder="Search games..." class="w-full max-w-md rounded-4xl placeholder-gray-400 bg-white/10 px-5 py-3 text-lg hover:shadow-xl transition-shadow duration-200 focus:outline-none focus:ring-0" />
+        <button title="Add game" onclick="newGame()" class="cursor-pointer flex items-center justify-center w-12 h-12 bg-white/10 rounded-full hover:shadow-xl transition-shadow duration-200 shrink-0">
+          <span class="material-symbols-rounded" style="font-size: 2rem;">add</span>
+        </button>
+        <button id="rmv-game-btn" title="Remove game" onclick="" class="cursor-pointer flex items-center justify-center w-12 h-12 bg-white/10 rounded-full hover:shadow-xl transition-shadow duration-200 shrink-0">
+          <span class="material-symbols-rounded" style="font-size: 2rem;">remove</span>
+        </button>
+      </div>
+      <div id="game-cards" class="p-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6 font-medium text-lg justify-items-center items-center"></div>
+      <button id="del-btn" class="fixed hidden bottom-6 left-1/2 -translate-x-1/2 z-50 cursor-pointer items-center justify-center gap-2 rounded-full bg-white/10 px-6 py-3 text-lg backdrop-blur-2xl hover:shadow-xl transition-all duration-200">
+        <span class="material-symbols-rounded" style="font-size: 1.5rem;">delete</span>
+        <span>Delete Selected</span>
+      </button>
     </main>
     <button id="btn" class="fixed cursor-pointer material-symbols-rounded absolute top-4 left-4 z-50 cursor-pointer" style="font-size: 4rem;">menu</button>
-    <div id="panel" class="fixed inset-0 flex items-center h-screen w-screen z-20">
-      <ul class="text-5xl font-[550] space-y-18 m-10">
-        <a href="/" class="flex align-center gap-2 transition-transform duration-300 hover:translate-x-4">
-          <span class="material-symbols-rounded" style="font-size: 3rem;">home</span>
-        Home</a>
-        <a href="/games.html" class="flex align-center gap-2 transition-transform duration-300 hover:translate-x-4">
-          <span class="material-symbols-rounded" style="font-size: 3rem;">stadia_controller</span>
-        Games</a>
-        <a href="/settings.html" class="flex align-center gap-2 transition-transform duration-300 hover:translate-x-4">
-          <span class="material-symbols-rounded" style="font-size: 3rem;">settings</span>
-        Settings</a>
-        <a href="/credits.html" class="flex align-center gap-2 transition-transform duration-300 hover:translate-x-4">
-          <span class="material-symbols-rounded" style="font-size: 3rem;">patient_list</span>
-        Credits</a>
-      </ul>
+    <div id="panel" class="fixed inset-0 flex items-center h-screen w-screen z-20"> 
+      <ul class="text-[3.5vw] font-[550] space-y-[4vh] mt-[5vh] ml-[3vw] bg-zinc-300/20 p-[3vw] pr-[5vw] rounded-[3vw] backdrop-blur-3xl"> 
+        <a href="/" class="flex items-center gap-[1vw] transition-transform duration-300 hover:translate-x-[0.5vw] text-shadow-lg"> 
+          <span class="material-symbols-rounded" style="font-size: 3.5vw;">home</span> Home
+        </a> 
+        <a href="/games.html" class="flex items-center gap-[1vw] transition-transform duration-300 hover:translate-x-[0.5vw] text-shadow-lg"> 
+          <span class="material-symbols-rounded" style="font-size: 3.5vw;">stadia_controller</span> Games
+        </a> 
+        <a href="/settings.html" class="flex items-center gap-[1vw] transition-transform duration-300 hover:translate-x-[0.5vw] text-shadow-lg"> 
+          <span class="material-symbols-rounded" style="font-size: 3.5vw;">settings</span> Settings
+        </a> 
+        <a href="/credits.html" class="flex items-center gap-[1vw] transition-transform duration-300 hover:translate-x-[0.5vw] text-shadow-lg"> 
+          <span class="material-symbols-rounded" style="font-size: 3.5vw;">patient_list</span> Credits
+        </a> 
+      </ul> 
     </div>
   </body>
   <script src="main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
-  <script src="gamesPage.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/selecto@1.26.3/dist/selecto.min.js"></script>
+  <script src="gamespage.js"></script>
 </html>

@@ -45,6 +45,17 @@ a, h1, h2, h3, h4, h5, h6, button {
   transform: translateX(0%); 
 }
 
+.theme-panel {
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+.theme-panel p,
+.theme-panel div,
+.theme-panel input {
+  transform: translateZ(20px);
+}
+
 .theme-buttons {
   cursor: pointer;
   border-radius: 0.75rem;
@@ -62,6 +73,7 @@ a, h1, h2, h3, h4, h5, h6, button {
   margin-bottom: 1rem;
   object-fit: contain;
   transform: translateZ(30px);
+  align-self: center;
 }
 
 #game-cards p {
@@ -91,6 +103,12 @@ a, h1, h2, h3, h4, h5, h6, button {
 
 #toolbar a:hover {
   transform: scale(1.2);
+}
+
+.game-card.selected {
+    outline: 3px solid var(--text);
+    outline-offset: 5px;
+    transform: scale(0.95);
 }
 
 [data-theme="normal"] {

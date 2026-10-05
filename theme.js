@@ -1,4 +1,5 @@
 const root = document.documentElement;
+const theme_panel = document.querySelector(".theme-panel");
 const bgInput = document.getElementById("bgHex");
 const textInput = document.getElementById("textHex");
 
@@ -27,3 +28,5 @@ textInput.addEventListener("keydown", (event) => {
   event.preventDefault();
   setCustomColor("--text", textInput.value.trim(), "customText");
 });
+
+VanillaTilt.init(theme_panel, { max: 25, speed: 400, perspective: 1000 });

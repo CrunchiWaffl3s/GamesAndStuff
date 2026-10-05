@@ -1,15 +1,18 @@
 const idValue = new URLSearchParams(window.location.search).get("id");
 
-fetch('./games.json')
-  .then(response => response.json())
-  .then(games => {
-    const game = games.find(game => game.id === idValue);
-    
+Promise.all([
+  fetch('./games.json').then(response => response.json()),
+  Promise.resolve(JSON.parse(localStorage.getItem('customGames')) || [])
+])
+  .then(([jsonGames, localGames]) => {
+    const games = [...jsonGames, ...localGames];
+    const game = games.find(game => String(game.id) === String(idValue));
     const frame = document.getElementById("frame");
-    frame.src = game.link;
+
+    frame.src = game.url || game.link;
 
     const info_title = document.getElementById('info-title');
-    info_title.textContent = game.name
+    info_title.textContent = game.name;
 
     const battery_level = document.getElementById('battery');
 

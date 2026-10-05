@@ -29,21 +29,21 @@
       </div>
     </main>
     <button id="btn" class="cursor-pointer material-symbols-rounded absolute top-4 left-4 z-50" style="font-size: 4rem;">menu</button>
-    <div id="panel" class="h-screen w-screen z-20 flex items-center">
-      <ul class="text-5xl font-[550] space-y-18 m-10">
-        <a href="/" class="flex align-center gap-2 transition-transform duration-300 hover:translate-x-4">
-          <span class="material-symbols-rounded" style="font-size: 3rem;">home</span>
-        Home</a>
-        <a href="/games.html" class="flex align-center gap-2 transition-transform duration-300 hover:translate-x-4">
-          <span class="material-symbols-rounded" style="font-size: 3rem;">stadia_controller</span>
-        Games</a>
-        <a href="/settings.html" class="flex align-center gap-2 transition-transform duration-300 hover:translate-x-4">
-          <span class="material-symbols-rounded" style="font-size: 3rem;">settings</span>
-        Settings</a>
-        <a href="/credits.html" class="flex align-center gap-2 transition-transform duration-300 hover:translate-x-4">
-          <span class="material-symbols-rounded" style="font-size: 3rem;">patient_list</span>
-        Credits</a>
-      </ul>
+    <div id="panel" class="fixed inset-0 flex items-center h-screen w-screen z-20"> 
+      <ul class="text-[3.5vw] font-[550] space-y-[4vh] mt-[5vh] ml-[3vw] bg-zinc-300/20 p-[3vw] pr-[5vw] rounded-[3vw] backdrop-blur-3xl"> 
+        <a href="/" class="flex items-center gap-[1vw] transition-transform duration-300 hover:translate-x-[0.5vw] text-shadow-lg"> 
+          <span class="material-symbols-rounded" style="font-size: 3.5vw;">home</span> Home
+        </a> 
+        <a href="/games.html" class="flex items-center gap-[1vw] transition-transform duration-300 hover:translate-x-[0.5vw] text-shadow-lg"> 
+          <span class="material-symbols-rounded" style="font-size: 3.5vw;">stadia_controller</span> Games
+        </a> 
+        <a href="/settings.html" class="flex items-center gap-[1vw] transition-transform duration-300 hover:translate-x-[0.5vw] text-shadow-lg"> 
+          <span class="material-symbols-rounded" style="font-size: 3.5vw;">settings</span> Settings
+        </a> 
+        <a href="/credits.html" class="flex items-center gap-[1vw] transition-transform duration-300 hover:translate-x-[0.5vw] text-shadow-lg"> 
+          <span class="material-symbols-rounded" style="font-size: 3.5vw;">patient_list</span> Credits
+        </a> 
+      </ul> 
     </div>
   </body>
   <script src="main.js"></script>
